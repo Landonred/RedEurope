@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Red Crisis Overview
+	SpriteType = { 
+		name = "USA_red_crisis_overview-1"
+		texturefile = "gfx/interface/events/usa-event/USA_red_crisis_overview-1.dds"
+	}
+
+ 
+ }

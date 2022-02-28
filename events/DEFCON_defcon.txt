@@ -1,0 +1,10 @@
+add_namespace = DEFCON_defcon
+
+#DEFCON-5 Started
+country_event = {
+	id = DEFCON_defcon.1
+	title = DEFCON_defcon.1.t
+	desc = DEFCON_defcon.1.d
+
+	picture = DEFCON_defcon5_started-1
+}

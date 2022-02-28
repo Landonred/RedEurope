@@ -1,0 +1,550 @@
+focus_tree = {
+	id = usa-50s-tree
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	#Negotiate for Norwegian Membership
+	focus = {
+		id = USA_negotiate_for_norwegian_membership
+		icon = GFX_goal_unknown
+		x = 13
+		y = 9
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_forafreeeurope  }
+	}
+
+	#Crusade Against Communism
+	focus = {
+		id = USA_crusade_against_communism
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_spain_accepts  }
+	}
+
+	#Sanction Franco
+	focus = {
+		id = USA_sanction_franco
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_spain_declines  }
+	}
+
+	#The Red Crisis
+	focus = {
+		id = USA_the_red_crisis
+		icon = GFX_USA_the_red_crisis-165183
+		x = 4
+		y = 2
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 20
+			
+			
+			
+			
+		}
+	}
+
+	#United States Armed Forces
+	focus = {
+		id = USA_united_states_armed_forces
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 6
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+
+	#Increase Nuclear Spending
+	focus = {
+		id = USA_increase_nuclear_spending
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = USA_the_red_crisis  }
+		ai_will_do = { factor = 15 }
+	}
+
+	#Formation of FETO
+	focus = {
+		id = USA_formation_of_feto
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_the_red_crisis  }
+		ai_will_do = { factor = 20 }
+	}
+
+	#Military aid to Greece
+	focus = {
+		id = USA_military_aid_to_greece
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_formation_of_feto  }
+	}
+
+	#Strategic Airbases in Krete
+	focus = {
+		id = USA_strategic_airbases_in_krete
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_military_aid_to_greece  } prerequisite = { focus = USA_increase_nuclear_spending  }
+	}
+
+	#Military Aid to France and Italy
+	focus = {
+		id = USA_military_aid_to_france_and_italy
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_formation_of_feto  }
+	}
+
+	#The Second Red Scare
+	focus = {
+		id = USA_the_second_red_scare
+		icon = GFX_goal_unknown
+		x = 2
+		y = 4
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = USA_domestic_front  }
+		ai_will_do = { factor = 10 }
+	}
+
+	#Domestic Front
+	focus = {
+		id = USA_domestic_front
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = USA_the_red_crisis  }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			add_stability = 5
+		}
+	}
+
+	#The Hollywood 10
+	focus = {
+		id = USA_the_hollywood_10
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = USA_the_second_red_scare  }
+		available = {
+			
+			date >, date < > 1947.10.1
+			
+		}
+	}
+
+	#Improve Nuclear Bomb Designs
+	focus = {
+		id = USA_improve_nuclear_bomb_designs
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = USA_increase_nuclear_spending  }
+	}
+
+	#Study German Rocket Designs
+	focus = {
+		id = USA_study_german_rocket_designs
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = USA_improve_nuclear_bomb_designs  }
+	}
+
+	#Marshall Plan
+	focus = {
+		id = USA_marshall_plan
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = USA_formation_of_feto  }
+	}
+
+	#For a Free Europe!
+	focus = {
+		id = USA_forafreeeurope
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_fetoexpansion  } prerequisite = { focus = USA_sanction_franco  }
+		mutually_exclusive = { focus = USA_crusade_against_communism  }
+	}
+
+	#Hole in the Iron Curtain
+	focus = {
+		id = USA_hole_in_the_iron_curtain
+		icon = GFX_focus_invite_yugoslavia
+		x = 18
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_formation_of_feto  }
+	}
+
+	#United States Navy
+	focus = {
+		id = USA_united_states_navy
+		icon = GFX_goal_unknown
+		x = 3
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_united_states_armed_forces  }
+	}
+
+	#Go with the Dutch
+	focus = {
+		id = USA_go_with_the_dutch
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_hole_in_the_iron_curtain  }
+		mutually_exclusive = { focus = USA_go_with_yugoslavia  } mutually_exclusive = { focus = USA_commies_are_commies  }
+	}
+
+	#Go with Yugoslavia
+	focus = {
+		id = USA_go_with_yugoslavia
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_hole_in_the_iron_curtain  }
+		mutually_exclusive = { focus = USA_go_with_the_dutch  } mutually_exclusive = { focus = USA_commies_are_commies  }
+	}
+
+	#Commies are Commies
+	focus = {
+		id = USA_commies_are_commies
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_hole_in_the_iron_curtain  }
+		mutually_exclusive = { focus = USA_go_with_the_dutch  } mutually_exclusive = { focus = USA_go_with_yugoslavia  }
+	}
+
+	#Denounce Tito's and Groot's Regime
+	focus = {
+		id = USA_denouncetitosandgrootsregime
+		icon = GFX_goal_unknown
+		x = 18
+		y = 6
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_commies_are_commies  }
+	}
+
+	#Letter to Paul de Groot
+	focus = {
+		id = USA_letter_to_paul_de_groot
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_go_with_the_dutch  }
+	}
+
+	#But what about freedom?
+	focus = {
+		id = USA_butwhataboutfreedom
+		icon = GFX_goal_unknown
+		x = 1
+		y = 7
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_the_hollywood_10  }
+		mutually_exclusive = { focus = USA_communists_know_no_freedom  }
+	}
+
+	#Communists know no freedom
+	focus = {
+		id = USA_communists_know_no_freedom
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 0.7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_the_hollywood_10  }
+		mutually_exclusive = { focus = USA_butwhataboutfreedom  }
+	}
+
+	#The Wall Stands
+	focus = {
+		id = USA_the_wall_stands
+		icon = GFX_goal_unknown
+		x = 17
+		y = 7
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_letter_to_paul_de_groot  }
+	}
+
+	#A Crack in the Wall
+	focus = {
+		id = USA_a_crack_in_the_wall
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_letter_to_paul_de_groot  }
+		mutually_exclusive = { focus = USA_the_wall_stands  }
+	}
+
+	#Prepare for Conflict
+	focus = {
+		id = USA_prepare_for_conflict
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 2.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_military_aid_to_france_and_italy  }
+	}
+
+	#Truman's Term
+	focus = {
+		id = USA_trumansterm
+		icon = GFX_goal_unknown
+		x = 22
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 10
+			
+		}
+	}
+
+	#United States Army
+	focus = {
+		id = USA_united_states_army
+		icon = GFX_goal_unknown
+		x = 6
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_united_states_armed_forces  }
+	}
+
+	#United States Airforce
+	focus = {
+		id = USA_united_states_airforce
+		icon = GFX_goal_unknown
+		x = 9
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_united_states_armed_forces  }
+	}
+
+	#Fight Against Communism
+	focus = {
+		id = USA_fight_against_communism
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_fetoexpansion  }
+	}
+
+	#FETO Expansion?
+	focus = {
+		id = USA_fetoexpansion
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_formation_of_feto  }
+	}
+
+	#Spain Accepts
+	focus = {
+		id = USA_spain_accepts
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_fight_against_communism  }
+	}
+
+	#Spain Declines
+	focus = {
+		id = USA_spain_declines
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_fight_against_communism  }
+		mutually_exclusive = { focus = USA_spain_accepts  }
+	}
+
+	#Back Netherlands in Liberalization
+	focus = {
+		id = USA_back_netherlands_in_liberalization
+		icon = GFX_goal_unknown
+		x = 15
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_intelligence_from_groot  }
+	}
+
+	#Intelligence from Groot
+	focus = {
+		id = USA_intelligence_from_groot
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_limit_soviet_influence_in_the_netherlands  }
+	}
+
+	#Limit Soviet influence in the Netherlands
+	focus = {
+		id = USA_limit_soviet_influence_in_the_netherlands
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 3.6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = USA_a_crack_in_the_wall  }
+	}
+
+}

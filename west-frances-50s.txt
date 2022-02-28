@@ -1,0 +1,343 @@
+focus_tree = {
+	id = west-frances-50s
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WFR
+		}
+	}
+	#Continue Liberty
+	focus = {
+		id = WFR_continue_liberty
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = WFR_degaullesterm  }
+	}
+
+	#Vincent Auriol's Term
+	focus = {
+		id = WFR_vincentauriolsterm
+		icon = GFX_goal_unknown
+		x = 5
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+	}
+
+	#Au revoir le travail
+	focus = {
+		id = WFR_au_revoir_le_travail
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_vincentauriolsterm  }
+	}
+
+	#Au revoir les amis
+	focus = {
+		id = WFR_au_revoir_les_amis
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 3
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_vincentauriolsterm  }
+	}
+
+	#Maison d’adieu
+	focus = {
+		id = WFR_maisondadieu
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_vincentauriolsterm  }
+	}
+
+	#Adieu la nourriture
+	focus = {
+		id = WFR_adieu_la_nourriture
+		icon = GFX_goal_generic_trade
+		x = 5
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_au_revoir_le_travail  } prerequisite = { focus = WFR_au_revoir_les_amis  } prerequisite = { focus = WFR_maisondadieu  }
+	}
+
+	#Plotting for a Revolution
+	focus = {
+		id = WFR_plotting_for_a_revolution
+		icon = GFX_WFR_plotting_for_a_revolution-88
+		x = 3
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_adieu_la_nourriture  }
+	}
+
+	#Accept doom
+	focus = {
+		id = WFR_accept_doom
+		icon = GFX_WFR_accept_doom-59
+		x = 8
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_adieu_la_nourriture  }
+		mutually_exclusive = { focus = WFR_plotting_for_a_revolution  }
+	}
+
+	#Trust in the Général
+	focus = {
+		id = WFR_trustinthegeneral
+		icon = GFX_focus_fra_milice
+		x = 2
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_plotting_for_a_revolution  }
+	}
+
+	#Support from the Soviets
+	focus = {
+		id = WFR_support_from_the_soviets
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_plotting_for_a_revolution  }
+		mutually_exclusive = { focus = WFR_trustinthegeneral  }
+	}
+
+	#Une armée avec nous
+	focus = {
+		id = WFR_unearmeeavecnous
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_trustinthegeneral  }
+	}
+
+	#Prepare the Department of Labor
+	focus = {
+		id = WFR_prepare_the_department_of_labor
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_support_from_the_soviets  }
+	}
+
+	#Plus la politique est libre, plus le peuple est libre
+	focus = {
+		id = WFR_pluslapolitiqueestlibrepluslepeupleestlibre
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = WFR_accept_doom  }
+	}
+
+	#Economic Improvement
+	focus = {
+		id = WFR_economic_improvement
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = WFR_adieu_la_nourriture  }
+	}
+
+	#Strike!
+	focus = {
+		id = WFR_strike
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 12
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_prepare_the_department_of_labor  }
+	}
+
+	#Coup!
+	focus = {
+		id = WFR_coup
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 12
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_unearmeeavecnous  }
+	}
+
+	#New Age of Progress
+	focus = {
+		id = WFR_new_age_of_progress
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_strike  }
+	}
+
+	#Back to Liberté
+	focus = {
+		id = WFR_backtoliberte
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = WFR_coup  }
+	}
+
+	#de Gaulle's Term
+	focus = {
+		id = WFR_degaullesterm
+		icon = GFX_goal_unknown
+		x = 12
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		ai_will_do = { factor = 100 }
+		available = {
+			WFR has_completed_focus = WFR_back_to_liberté
+			
+			
+		}
+	}
+
+	#Extend French influence in FETO
+	focus = {
+		id = WFR_extend_french_influence_in_feto
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 12
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = WFR_fourth_nuclear_power  }
+	}
+
+	#Declare Absolute Control
+	focus = {
+		id = WFR_declare_absolute_control
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = WFR_degaullesterm  }
+		mutually_exclusive = { focus = WFR_continue_liberty  }
+		available = {
+			hold_election = yes
+			
+			
+		}
+		bypass = {
+			hold_election = no
+			
+		}
+		completion_reward = {
+			hold_election = no
+			
+		}
+	}
+
+	#Declare the "Thirty glorious years" plan
+	focus = {
+		id = WFR_declarethethirtygloriousyearsplan
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = WFR_declare_absolute_control  }
+	}
+
+	#Fourth nuclear power
+	focus = {
+		id = WFR_fourth_nuclear_power
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = WFR_declarethethirtygloriousyearsplan  }
+	}
+
+	#Foundation of the EEC
+	focus = {
+		id = WFR_foundation_of_the_eec
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = WFR_extend_french_influence_in_feto  }
+	}
+
+}

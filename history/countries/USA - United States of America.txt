@@ -1,0 +1,47 @@
+﻿oob = "USA_1947"
+capital = 1
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 0
+
+
+add_ideas = {
+	extensive_conscription
+	partial_economic_mobilisation
+}
+
+
+#Starting tech
+set_technology = {
+}
+
+#Politics for 1947.6.1
+set_politics = {
+	ruling_party = social_liberialism
+	last_election = "1944.11.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	liberal_conservatism = 7
+	social_liberialism = 7
+	anarchism = 7
+	authoritarian_socialism = 7
+	stalinism = 7
+	liberal_socialism = 7
+	ultranationalism = 7
+	conservative_totalitarianism = 7
+	left_socialism = 7
+	ultranationalist_totalitarianism = 0
+}
+
+recruit_character = thomas_e_dewey
+recruit_character = harry_s_truman
+recruit_character = fallen_government
+recruit_character = eugene_dennis
+recruit_character = aaron_copland
+recruit_character = james_p_cannon
+recruit_character = george_c_marshall
+recruit_character = joseph_r_mccarthy
+

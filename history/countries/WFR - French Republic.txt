@@ -1,0 +1,98 @@
+﻿oob = "WFR_1936"
+capital = 1
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 0
+
+
+add_ideas = {
+	scraping_the_barrel
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+}
+
+
+
+
+#For start date 1939.1.1
+1939.1.1 = {
+	add_political_power = 1000
+	oob = "WFR_1939"
+}
+
+
+#For start date 1947.6.1
+1947.6.1 = {
+	add_political_power = 1000
+	oob = "WFR_1947"
+}
+
+#Politics for 1936.1.1
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.7.27"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	liberal_conservatism = 6
+	social_liberialism = 6
+	anarchism = 6
+	authoritarian_socialism = 6
+	stalinism = 6
+	liberal_socialism = 6
+	ultranationalism = 6
+	conservative_totalitarianism = 6
+	left_socialism = 6
+	ultranationalist_totalitarianism = 0
+}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_popularities = {
+		liberal_conservatism = 6
+		social_liberialism = 6
+		anarchism = 6
+		authoritarian_socialism = 6
+		stalinism = 6
+		liberal_socialism = 6
+		ultranationalism = 6
+		conservative_totalitarianism = 6
+		left_socialism = 6
+		ultranationalist_totalitarianism = 0
+	}
+}
+
+#Politics for 1947.6.1
+1947.6.1 = {
+	set_popularities = {
+		liberal_conservatism = 6
+		social_liberialism = 6
+		anarchism = 6
+		authoritarian_socialism = 6
+		stalinism = 6
+		liberal_socialism = 6
+		ultranationalism = 6
+		conservative_totalitarianism = 6
+		left_socialism = 6
+		ultranationalist_totalitarianism = 0
+	}
+}
+
+recruit_character = auguste_champetier_de_ribes
+recruit_character = vincent_auriol
+recruit_character = fallen_government
+recruit_character = jeanmedecin
+recruit_character = jules_gasser
+recruit_character = michel_clemenceau
+recruit_character = executed
+recruit_character = charles_de_gaulle
+recruit_character = executed
+recruit_character = executed
+
+
+

@@ -1,0 +1,10 @@
+
+#Custom colours start here
+USA = {
+	color = rgb { 0 101 215 }
+	color_ui = rgb { 0 101 215 }
+}
+WFR = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}

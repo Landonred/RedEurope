@@ -1,0 +1,30 @@
+add_namespace = USA_usa
+
+#Red Crisis Overview
+country_event = {
+	id = USA_usa.1
+	title = USA_usa.1.t
+	desc = USA_usa.1.d
+
+	picture = USA_red_crisis_overview-1
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+
+
+	}
+	timeout_days = 10
+	fire_for_sender = yes
+	option = {
+		name = USA_usa.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 20 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}

@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: DEFCON-5 Started
+	SpriteType = { 
+		name = "DEFCON_defcon5_started-1"
+		texturefile = "gfx/interface/events/defcon-event/DEFCON_defcon5_started-1.dds"
+	}
+
+ 
+ }

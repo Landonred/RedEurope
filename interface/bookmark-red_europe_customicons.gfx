@@ -1,0 +1,7 @@
+spriteTypes = { 
+	##Icon For: Red Europe
+	SpriteType = { 
+		name = "red_europe-165176"
+		texturefile = "gfx/interface/bookmarks/red_europe-bookmark/red_europe-165176.dds"
+	}
+

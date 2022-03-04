@@ -1,2 +1,0 @@
-USA = "countries/United States of America.txt"
-WFR = "countries/French Republic.txt"

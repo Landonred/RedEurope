@@ -1,0 +1,129 @@
+characters = {
+#Create country leader - Joseph R. McCarthy
+joseph_r_mccarthy = {
+	name = joseph_r_mccarthy
+	portraits = {
+		civilian = {
+			#Custom image for Joseph R. McCarthy
+			large = "/gfx/leaders/USA/wdSuMfIA-165215.dds"
+		}
+	}
+	country_leader = {
+		expire = "1957.05.02"
+		ideology = conservative_totalitarianism
+		traits = {  }
+	}
+}
+
+#Create country leader - George C. Marshall
+george_c_marshall = {
+	name = george_c_marshall
+	portraits = {
+		civilian = {
+			#Custom image for George C. Marshall
+			large = "/gfx/leaders/USA/IneYUcDu-165692.dds"
+		}
+	}
+	country_leader = {
+		expire = "1959.10.01"
+		ideology = ultranationalism
+		traits = {  }
+	}
+}
+
+#Create country leader - James P. Cannon
+james_p_cannon = {
+	name = james_p_cannon
+	portraits = {
+		civilian = {
+			#Custom image for James P. Cannon
+			large = "/gfx/leaders/USA/zKPwWpBl-165206.dds"
+		}
+	}
+	country_leader = {
+		expire = "1974.07.21"
+		ideology = liberal_socialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Aaron Copland
+aaron_copland = {
+	name = aaron_copland
+	portraits = {
+		civilian = {
+			#Custom image for Aaron Copland
+			large = "/gfx/leaders/USA/sxfHuewE-165715.dds"
+		}
+	}
+	country_leader = {
+		expire = "1990.12.02"
+		ideology = stalinism
+		traits = {  }
+	}
+}
+
+#Create country leader - Eugene Dennis
+eugene_dennis = {
+	name = eugene_dennis
+	portraits = {
+		civilian = {
+			#Custom image for Eugene Dennis
+			large = "/gfx/leaders/USA/RraObjeD-165213.dds"
+		}
+	}
+	country_leader = {
+		expire = "1961.01.31"
+		ideology = authoritarian_socialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Fallen Government
+fallen_government = {
+	name = fallen_government
+	portraits = {
+		civilian = {
+			#Custom image for Fallen Government
+			large = "/gfx/leaders/USA/PWMhosnV-165651.dds"
+		}
+	}
+	country_leader = {
+		expire = "9999.31.12"
+		ideology = anarchism
+		traits = {  }
+	}
+}
+
+#Create country leader - Harry S. Truman
+harry_s_truman = {
+	name = harry_s_truman
+	portraits = {
+		civilian = {
+			#Custom image for Harry S. Truman
+			large = "/gfx/leaders/USA/paHFurjY-165648.dds"
+		}
+	}
+	country_leader = {
+		expire = "1792.12.26"
+		ideology = social_liberialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Thomas E. Dewey
+thomas_e_dewey = {
+	name = thomas_e_dewey
+	portraits = {
+		civilian = {
+			#Custom image for Thomas E. Dewey
+			large = "/gfx/leaders/USA/oFlkqSCI-165649.dds"
+		}
+	}
+	country_leader = {
+		expire = "1971.03.16"
+		ideology = test
+		traits = {  }
+	}
+}
+}

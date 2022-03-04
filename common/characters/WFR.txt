@@ -1,0 +1,161 @@
+characters = {
+#Create country leader - EXECUTED
+executed = {
+	name = executed
+	portraits = {
+		civilian = {
+			#Custom image for EXECUTED
+			large = "/gfx/leaders/WFR/koXzRuaL-166382.dds"
+		}
+	}
+	country_leader = {
+		expire = "9999.12.31"
+		ideology = ultranationalist_totalitarianism
+		traits = {  }
+	}
+}
+
+#Create country leader - EXECUTED
+executed = {
+	name = executed
+	portraits = {
+		civilian = {
+			#Custom image for EXECUTED
+			large = "/gfx/leaders/WFR/daIZBKzn-166364.dds"
+		}
+	}
+	country_leader = {
+		expire = "9999.12.31"
+		ideology = left_socialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Charles de Gaulle
+charles_de_gaulle = {
+	name = charles_de_gaulle
+	portraits = {
+		civilian = {
+			#Custom image for Charles de Gaulle
+			large = "/gfx/leaders/WFR/RGEPUJwz-166236.dds"
+		}
+	}
+	country_leader = {
+		expire = "1970.11.09"
+		ideology = conservative_totalitarianism
+		traits = {  }
+	}
+}
+
+#Create country leader - EXECUTED
+executed = {
+	name = executed
+	portraits = {
+		civilian = {
+			#Custom image for EXECUTED
+			large = "/gfx/leaders/WFR/MYPHpcyb-166400.dds"
+		}
+	}
+	country_leader = {
+		expire = "9999.12.31"
+		ideology = ultranationalism
+		traits = {  }
+	}
+}
+
+#Create country leader - Michel Clemenceau
+michel_clemenceau = {
+	name = michel_clemenceau
+	portraits = {
+		civilian = {
+			#Custom image for Michel Clemenceau
+			large = "/gfx/leaders/WFR/DvVwPBpu-165780.dds"
+		}
+	}
+	country_leader = {
+		expire = "1964.03.04"
+		ideology = liberal_socialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Jules Gasser
+jules_gasser = {
+	name = jules_gasser
+	portraits = {
+		civilian = {
+			#Custom image for Jules Gasser
+			large = "/gfx/leaders/WFR/oFhmHteA-166351.dds"
+		}
+	}
+	country_leader = {
+		expire = "1958.05.28"
+		ideology = stalinism
+		traits = {  }
+	}
+}
+
+#Create country leader - Jean Médecin
+jeanmedecin = {
+	name = jeanmedecin
+	portraits = {
+		civilian = {
+			#Custom image for Jean Médecin
+			large = "/gfx/leaders/WFR/PDgkMavV-166394.dds"
+		}
+	}
+	country_leader = {
+		expire = "1965.12.18"
+		ideology = authoritarian_socialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Fallen Government
+fallen_government = {
+	name = fallen_government
+	portraits = {
+		civilian = {
+			#Custom image for Fallen Government
+			large = "/gfx/leaders/WFR/MvojeTuL-165651.dds"
+		}
+	}
+	country_leader = {
+		expire = "9999.12.31"
+		ideology = anarchism
+		traits = {  }
+	}
+}
+
+#Create country leader - Vincent Auriol
+vincent_auriol = {
+	name = vincent_auriol
+	portraits = {
+		civilian = {
+			#Custom image for Vincent Auriol
+			large = "/gfx/leaders/WFR/VIfOMAtu-165774.dds"
+		}
+	}
+	country_leader = {
+		expire = "1966.01.01"
+		ideology = social_liberialism
+		traits = {  }
+	}
+}
+
+#Create country leader - Auguste Champetier de Ribes
+auguste_champetier_de_ribes = {
+	name = auguste_champetier_de_ribes
+	portraits = {
+		civilian = {
+			#Custom image for Auguste Champetier de Ribes
+			large = "/gfx/leaders/WFR/SdgnuIMJ-165802.dds"
+		}
+	}
+	country_leader = {
+		expire = "1971.03.16"
+		ideology = liberal_conservatism
+		traits = {  }
+	}
+}
+}
